@@ -40,7 +40,7 @@ public class CoolWeatherDB {
      * @param context
      * @return
      */
-    public synchronized CoolWeatherDB getInstance(Context context){
+    public static synchronized CoolWeatherDB getInstance(Context context){
         if(coolWeatherDB == null){
             coolWeatherDB = new CoolWeatherDB(context);
         }
